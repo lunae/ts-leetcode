@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# script/test: Run test suite
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+setup() {
+  echo "> Running test suite."
+  if [ $# -eq 0 ]; then
+    npm test
+  else
+    npm test -- "$@"
+  fi
+  echo "> Test suite complete."
+}
+
+setup "$@"
