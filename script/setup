@@ -24,10 +24,15 @@ install_homebrew_packages() {
   fi
 }
 
+install_npm_dependencies() {
+  npm install
+}
+
 setup() {
   echo "> Setup starting."
   verify_homebrew_installation
   install_homebrew_packages
+  install_npm_dependencies
   echo "> Setup complete."
 }
 
