@@ -19,6 +19,9 @@ function moveZeroes(nums: number[]): void {
 const cases: [number[], number[]][] = [
   [[0,1,0,3,12],[1,3,12,0,0]],
   [[0],[0]],
+  [[], []],
+  [[0,0,0],[0,0,0]],
+  [[0,0,0,0,1], [1,0,0,0,0]]
 ];
 
 test.each(cases)('given array %p, should return %p', (nums: number[], expected: number[]) => {
