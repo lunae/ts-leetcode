@@ -1,5 +1,5 @@
 import { describe, expect, test } from '@jest/globals';
-import { ListNode, arrayToListNode } from '../../utils';
+import { ListNode, arrayToListNode } from '../../../utils';
 
 // https://leetcode.com/explore/interview/card/top-interview-questions-easy/93/linked-list/773/
 
